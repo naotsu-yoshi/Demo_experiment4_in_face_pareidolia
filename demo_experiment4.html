@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>My experiment</title>
+    <title>Demo experiment4 for pareidolia</title>
     <meta charset="UTF-8">
     <script src="https://unpkg.com/jspsych@7.3.4"></script>
     <script src="https://unpkg.com/@jspsych/plugin-fullscreen@1.2.1"></script>
@@ -11,7 +11,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.8/p5.min.js" integrity="sha512-IE9++xyscTNg2csd2bQwvfR2xAiHMqDWaijYfS9BvcF7p1DN6q/QRbJn2w63MWAxWXlTGBQJqaezJMF6jRFxoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="jspsych-plugin/jspsych-p5.js"></script>
     <link href="https://unpkg.com/jspsych@8.2.1/css/jspsych.css" rel="stylesheet" type="text/css" />
-
+    <style>
+      #demo-banner {
+        position: fixed; /* 画面上の特定の位置に固定する */
+        top: 10px;       /* 画面の上から10pxの位置 */
+        right: 10px;     /* 画面の右から10pxの位置 */
+        padding: 5px 10px;
+        background-color: rgba(255, 0, 0, 0.7); /* 半透明の赤色 */
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        z-index: 9999; /* 他の全ての要素より手前に表示する */
+        pointer-events: none; /* ★重要★ この要素がクリック等のマウス操作を無視するようにする */
+      }
+    </style>
   </head>
   <body></body>
   <!-- <script src=""></script> -->

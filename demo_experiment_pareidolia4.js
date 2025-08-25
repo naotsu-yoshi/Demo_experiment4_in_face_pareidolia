@@ -20,6 +20,16 @@ let block_fullscreen = {
   fullscreen_mode: true,
   data: {
     block: "fullscreen",
+  },
+  on_load: function() {
+    // 'div'要素を新しく作成
+    const demoBanner = document.createElement('div');
+    // CSSで指定したIDを付与
+    demoBanner.id = 'demo-banner';
+    // 表示したいテキストを設定
+    demoBanner.textContent = 'This is a DEMO';
+    // ページのbodyに要素を追加
+    document.body.appendChild(demoBanner);
   }
 };
 
